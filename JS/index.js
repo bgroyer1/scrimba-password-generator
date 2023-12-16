@@ -7,6 +7,9 @@ let characterLimit = document.querySelector("#character-limit")
 let limitSubmit = document.querySelector("#character-limit-submit")
 let specifiedCharacterLimit = false;
 
+
+
+
 function submitLimit() {
         
 }
@@ -35,5 +38,22 @@ generateBtn.addEventListener("click", () => {
     password2Div.textContent = password2
 })
 
+document.getElementById("clipboard1").addEventListener("click", () => {
+   var range = document.createRange();
+   range.selectNode(password1Div);
+   window.getSelection().removeAllRanges();
+   window.getSelection().addRange(range);
+   document.execCommand("copy");
+   window.getSelection().removeAllRanges();
+   window.alert("Copied to clipboard!")
+})
 
-
+document.getElementById("clipboard2").addEventListener("click", () => {
+    var range = document.createRange();
+    range.selectNode(password2Div);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+    window.alert("Copied to clipboard!")
+ })
