@@ -1,18 +1,12 @@
 const characters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", ",", "|", ":", ";", "<", ">", ".", "?",
     "/"];
-let generateBtn = document.querySelector("#generate-btn");
-let password1Div = document.querySelector("#password-div1");
-let password2Div = document.querySelector("#password-div2");
-let characterLimit = document.querySelector("#character-limit")
-let limitSubmit = document.querySelector("#character-limit-submit")
-let specifiedCharacterLimit = false;
+const generateBtn = document.querySelector("#generate-btn");
+const password1Div = document.querySelector("#password-div1");
+const password2Div = document.querySelector("#password-div2");
+const characterLimit = document.querySelector("#character-limit")
+const limitSubmit = document.querySelector("#character-limit-submit") 
+const p1El = document.querySelector("#p-1")
 
-
-
-
-function submitLimit() {
-        
-}
 
 function randomCharacter() {
     return characters[Math.floor(Math.random() * characters.length)]
@@ -39,13 +33,13 @@ generateBtn.addEventListener("click", () => {
 })
 
 document.getElementById("clipboard1").addEventListener("click", () => {
-   var range = document.createRange();
-   range.selectNode(password1Div);
-   window.getSelection().removeAllRanges();
-   window.getSelection().addRange(range);
-   document.execCommand("copy");
-   window.getSelection().removeAllRanges();
-   window.alert("Copied to clipboard!")
+    var range = document.createRange();
+    range.selectNode(password1Div);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+    p1El.textContent = `Password 1 copied to clipboard`
 })
 
 document.getElementById("clipboard2").addEventListener("click", () => {
@@ -55,5 +49,5 @@ document.getElementById("clipboard2").addEventListener("click", () => {
     window.getSelection().addRange(range);
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
-    window.alert("Copied to clipboard!")
- })
+    p1El.textContent = `Password 2 copied to clipboard`
+})

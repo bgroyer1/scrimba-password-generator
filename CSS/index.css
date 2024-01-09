@@ -40,20 +40,19 @@ hr {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-between;  */
     margin-top: 32px;
 }
 
 
 .password-div {
-    flex: 1;
     background-color: #273549;
     text-align: center;
     color: #55F991;
-    font-size: 16px;
-    width: 50vw;
+    width: 31vw;
     height: 2vw;
-    padding: 20px 10px;
+    padding: 10px 20px;
     margin: 0 10px 0 0;
 }
 
@@ -65,4 +64,11 @@ hr {
     width: 30px;
     height: 30px;
     margin: 15px 10px 25px 5px;
+}
+
+#p-1 {
+    font-family: Karla, sans-serif;
+    color: #55F991;
+    font-weight: bold;
+    font-size: 16px;
 }
