@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Password Generator 2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Generate a <br>
-    <span id="h1-span">random password.</span></h1>
-    <p>Never use an insecure password again.</p>
-    <!-- <p class="small">How many characters would you like the password to be?</p>
-    <div>
-        <input type="text" id="character-limit">
-        <input type="submit" id="character-limit-submit" onclick="submitLimit()">
-    </div> -->
-    <button id="generate-btn">Generate Passwords</button>
-    <hr>
-    <div class="container">
-            <div class="password-div" id="password-div1"></div>
-            <img id="clipboard1" class="clipboard-img" src="/IMG/copy.png" alt="copy to clipboard icon">  
-            <div class="password-div" id="password-div2"></div>
-            <img id="clipboard2" class="clipboard-img" src="/IMG/copy.png" alt="copy to clipboard icon">
-            <p id="p-1"></p>
-    </div>
-    <script src="/JS/index.js"></script>
+        <h1>Generate a <br><span class="green-text">random password.</span></h1>
+        <p>Never use an insecure password again.</p>
+        <button class="btn-password-generator">Generate Passwords</button>
+        <hr>
+        <div class="container">
+            <div class="password-div password1">
+                <p class="password1-el password-p"></p>
+            </div>
+            <div class="password-div password2">
+                <p class="password2-el password-p"></p>
+            </div>
+        </div>
+        <script src="JS/index.js"></script>
 </body>
 </html>

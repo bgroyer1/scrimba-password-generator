@@ -1,75 +1,73 @@
 body {
-    background-color: #1f2937;
-    margin: 56px 35px;
-    font-family: Karla;
-    user-select: none;
-    padding: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #1F2937;
+    max-width: 550px;
+    margin-left: 52px;
 }
+
+/*typography*/
 
 h1 {
-    color: #ECFDF5;
-
+    color: #EFEFEF;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 115px;
+    margin-bottom: 0;
 }
 
-#h1-span {
-    color: #4ADF86;
+.green-text {
+    color: #4ADF86
 }
 
 p {
-    color: #D5D4D8;
+    color:  #D5D4D8;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
 }
 
 button {
-    color: #FFFFFF;
     background-color: #10B981;
-    width: 190px;
+    color: #EFEFEF;
+    width: 191px;
+    font-weight:  500;
+    font-size: 16px;
     height: 42px;
     border: none;
     border-radius: 5px;
-    margin: 50px 0 32px 0;
-}
-
-button:hover {
-    background-color: #ECFDF5;
-    color: #10B981;
+    margin-top: 51px;
 }
 
 hr {
+    width: 446px;
     border-color: #273549;
-    
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 0;
 }
-
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1px;
-    margin-top: 32px;
+    padding-bottom: 100px;
 }
-
 
 .password-div {
     background-color: #273549;
-    text-align: center;
-    color: #55F991;
-    width: 31vw;
-    height: 2vw;
-    padding: 10px 20px;
-    margin: 0 10px 0 0;
+    width: 211px;
+    height: 39px;
 }
 
-.small {
-    font-size: x-small;
+
+.password1 {
+    margin-right: 24px;
 }
 
-.clipboard-img {
-    width: 20px;
-    height: 20px;
-}
-
-#p-1 {
-    font-family: Karla, sans-serif;
-    color: #55F991;
-    font-weight: bold;
+.password-p {
     font-size: 16px;
+    color: #10B981;
+    font-weight: 500;
+    text-align: center;
 }
+
+
+
